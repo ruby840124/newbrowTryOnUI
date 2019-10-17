@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/newbrowTryOnUI/precache-manifest.f6e66675e5b3f2579207419ad5f705fe.js"
+  "/newbrowTryOnUI/precache-manifest.3e87163949452ab4325963b68b3b4212.js"
 );
 
 self.addEventListener('message', (event) => {

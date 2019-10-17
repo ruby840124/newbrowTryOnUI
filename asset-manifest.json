@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/newbrowTryOnUI/static/css/main.3e969b09.chunk.css",
-    "main.js": "/newbrowTryOnUI/static/js/main.b386b4da.chunk.js",
-    "main.js.map": "/newbrowTryOnUI/static/js/main.b386b4da.chunk.js.map",
+    "main.css": "/newbrowTryOnUI/static/css/main.1a55c219.chunk.css",
+    "main.js": "/newbrowTryOnUI/static/js/main.38b102ac.chunk.js",
+    "main.js.map": "/newbrowTryOnUI/static/js/main.38b102ac.chunk.js.map",
     "runtime-main.js": "/newbrowTryOnUI/static/js/runtime-main.9b6ce39d.js",
     "runtime-main.js.map": "/newbrowTryOnUI/static/js/runtime-main.9b6ce39d.js.map",
     "static/css/2.25d86f56.chunk.css": "/newbrowTryOnUI/static/css/2.25d86f56.chunk.css",
     "static/js/2.8ac2d70d.chunk.js": "/newbrowTryOnUI/static/js/2.8ac2d70d.chunk.js",
     "static/js/2.8ac2d70d.chunk.js.map": "/newbrowTryOnUI/static/js/2.8ac2d70d.chunk.js.map",
     "index.html": "/newbrowTryOnUI/index.html",
-    "precache-manifest.f6e66675e5b3f2579207419ad5f705fe.js": "/newbrowTryOnUI/precache-manifest.f6e66675e5b3f2579207419ad5f705fe.js",
+    "precache-manifest.3e87163949452ab4325963b68b3b4212.js": "/newbrowTryOnUI/precache-manifest.3e87163949452ab4325963b68b3b4212.js",
     "service-worker.js": "/newbrowTryOnUI/service-worker.js",
     "static/css/2.25d86f56.chunk.css.map": "/newbrowTryOnUI/static/css/2.25d86f56.chunk.css.map",
-    "static/css/main.3e969b09.chunk.css.map": "/newbrowTryOnUI/static/css/main.3e969b09.chunk.css.map",
+    "static/css/main.1a55c219.chunk.css.map": "/newbrowTryOnUI/static/css/main.1a55c219.chunk.css.map",
     "static/media/after.jpg": "/newbrowTryOnUI/static/media/after.a2797f4e.jpg",
     "static/media/before.jpg": "/newbrowTryOnUI/static/media/before.5a8d54c4.jpg",
     "static/media/eyeBrow1.png": "/newbrowTryOnUI/static/media/eyeBrow1.30251faa.png",
@@ -38,7 +38,7 @@
     "static/js/runtime-main.9b6ce39d.js",
     "static/css/2.25d86f56.chunk.css",
     "static/js/2.8ac2d70d.chunk.js",
-    "static/css/main.3e969b09.chunk.css",
-    "static/js/main.b386b4da.chunk.js"
+    "static/css/main.1a55c219.chunk.css",
+    "static/js/main.38b102ac.chunk.js"
   ]
 }
