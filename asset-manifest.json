@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/newbrowTryOnUI/static/css/main.9e680abb.chunk.css",
+    "main.css": "/newbrowTryOnUI/static/css/main.f0e2719f.chunk.css",
     "main.js": "/newbrowTryOnUI/static/js/main.80614a80.chunk.js",
     "main.js.map": "/newbrowTryOnUI/static/js/main.80614a80.chunk.js.map",
     "runtime-main.js": "/newbrowTryOnUI/static/js/runtime-main.9b6ce39d.js",
@@ -9,10 +9,10 @@
     "static/js/2.8ac2d70d.chunk.js": "/newbrowTryOnUI/static/js/2.8ac2d70d.chunk.js",
     "static/js/2.8ac2d70d.chunk.js.map": "/newbrowTryOnUI/static/js/2.8ac2d70d.chunk.js.map",
     "index.html": "/newbrowTryOnUI/index.html",
-    "precache-manifest.8eabf79733b6f2c5c0a5e5a6d6bdc3d0.js": "/newbrowTryOnUI/precache-manifest.8eabf79733b6f2c5c0a5e5a6d6bdc3d0.js",
+    "precache-manifest.b88818af469efce745c521372f1910d6.js": "/newbrowTryOnUI/precache-manifest.b88818af469efce745c521372f1910d6.js",
     "service-worker.js": "/newbrowTryOnUI/service-worker.js",
     "static/css/2.25d86f56.chunk.css.map": "/newbrowTryOnUI/static/css/2.25d86f56.chunk.css.map",
-    "static/css/main.9e680abb.chunk.css.map": "/newbrowTryOnUI/static/css/main.9e680abb.chunk.css.map",
+    "static/css/main.f0e2719f.chunk.css.map": "/newbrowTryOnUI/static/css/main.f0e2719f.chunk.css.map",
     "static/media/after.jpg": "/newbrowTryOnUI/static/media/after.a2797f4e.jpg",
     "static/media/before.jpg": "/newbrowTryOnUI/static/media/before.5a8d54c4.jpg",
     "static/media/eyeBrow1.png": "/newbrowTryOnUI/static/media/eyeBrow1.30251faa.png",
@@ -38,7 +38,7 @@
     "static/js/runtime-main.9b6ce39d.js",
     "static/css/2.25d86f56.chunk.css",
     "static/js/2.8ac2d70d.chunk.js",
-    "static/css/main.9e680abb.chunk.css",
+    "static/css/main.f0e2719f.chunk.css",
     "static/js/main.80614a80.chunk.js"
   ]
 }
