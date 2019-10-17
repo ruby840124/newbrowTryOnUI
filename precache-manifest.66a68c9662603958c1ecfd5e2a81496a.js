@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8cf3a95e862b127edcef9ab1e3b1a343",
+    "revision": "ee19dfbfe2b78984fd8b89fca66a297c",
     "url": "/newbrowTryOnUI/index.html"
   },
   {
-    "revision": "dd08f2030d3df188f365",
+    "revision": "bc57bb1c7ed15d8852ba",
     "url": "/newbrowTryOnUI/static/css/2.25d86f56.chunk.css"
   },
   {
-    "revision": "c6c8665b1cad98206b3e",
+    "revision": "317ad7d4067879f07670",
     "url": "/newbrowTryOnUI/static/css/main.0cf75a8e.chunk.css"
   },
   {
-    "revision": "dd08f2030d3df188f365",
-    "url": "/newbrowTryOnUI/static/js/2.f9271867.chunk.js"
+    "revision": "bc57bb1c7ed15d8852ba",
+    "url": "/newbrowTryOnUI/static/js/2.8ac2d70d.chunk.js"
   },
   {
-    "revision": "c6c8665b1cad98206b3e",
-    "url": "/newbrowTryOnUI/static/js/main.f0dcf1f9.chunk.js"
+    "revision": "317ad7d4067879f07670",
+    "url": "/newbrowTryOnUI/static/js/main.fdb3d56f.chunk.js"
   },
   {
     "revision": "61eb62274930c117a1bc",
