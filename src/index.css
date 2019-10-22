@@ -1,0 +1,181 @@
+html, body, #root {
+  margin: 0;
+	height:100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+  
+  
+/*最上方區塊*/
+#topBlock{
+    display: flex;
+    background: #ff7380;
+    height: 80px;
+	  width:100%;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  
+  /*最上方區塊之中間字體樣式*/
+.topText{
+    color: #ffffff;         
+    font-size: 55px;       
+    font-family: SignPainter-HouseScript;
+}
+
+  /*最上方區塊之按鈕樣式*/
+.topButton{
+    outline:none;
+    border:none; 
+    background: #ff7380;
+    margin-left:  20px;
+    margin-right: 20px;               
+}
+
+
+/*選單上方區塊的樣式*/
+.browTopBlock{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    background: #fbf1e9;  
+ }
+
+   /*選單按鈕的樣式*/
+   .browFunction{
+    outline:none;
+    border:none;   
+    background: #fbf1e9;   
+    color: #000000;         
+    text-align: center;     
+    height: 60px;                  
+    font-family: ProximaNova-Bold;
+}
+
+/*被選到之選單按鈕樣式*/
+.selectBrowFunction{
+    color: #20c3b0;
+    height: 65px; 
+    border-bottom:solid 3px #20c3b0;                       
+}
+
+/*getBrow的樣式*/
+.getBrowFirst{ 
+  display: flex;
+  flex-direction:column;
+  justify-content: center; 	
+  align-items: center;
+  overflow: hidden;
+}
+
+.getBrowSecond{ 
+  display:flex;
+  font-family: ProximaNova-light;
+  align-items: center;
+  overflow: hidden;	
+}
+
+/*share的樣式*/
+.iconBlock{ 
+  display: flex;
+  flex-wrap: wrap;
+  margin-left:50px;
+  margin-right:50px;
+  width: 80%;
+  font-size: 14px; 
+  font-family: ProximaNova-light;
+}
+
+/*選擇眉毛圖案的樣式*/
+.eyeBrowButton{
+  margin-top:5%;
+  margin-left:4%;
+  outline:none;
+  border:none; 
+  background: #ffffff;            
+}
+
+/*選擇眉毛圖案右按鈕的樣式*/
+.belowSelectButtonRight{
+  margin-left:4%;
+  border:none;
+  background:#FFFFFF;
+  outline:none;
+  
+}
+
+/*選擇眉毛圖案左按鈕的樣式*/
+.belowSelectButtonLeft{
+  margin-right:4%;
+  border:none;
+  background:#FFFFFF;
+  outline:none;
+  
+}
+
+.rootBar{
+  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+  }
+
+.childrenBar{
+  position: relative;
+  display: inline-block;
+  }
+
+.buttonArrow{
+    border:none;
+    background:#fbf1e9;
+    outline:none; 
+}
+
+  /*下方選單按鈕的樣式*/
+  .BelowBrowButton{
+    outline:none;
+    border:none;   
+    background: #FFFFFF;          
+    text-align: center;     
+    height: 54px;               
+    font-family: ProximaNova-Bold;
+}
+
+/*被選到之下方選單按鈕樣式*/
+.selectBelowBrowFunction{
+    color: #20c3b0;
+    height: 65px;           
+}
+
+/*字體樣式區域*/
+@font-face {
+    font-family: SignPainter-HouseScript;
+    src: url("https://plugins2.perfectcorp.com/assets/fonts/signpainter_housescript.eot");
+    src: url("https://plugins2.perfectcorp.com/assets/fonts/signpainter_housescript.otf") format("opentype"); 
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("https://plugins2.perfectcorp.com/assets/fonts/proximanova_regular.eot");
+    src: url("https://plugins2.perfectcorp.com/assets/fonts/proximanova-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: ProximaNova-Bold;
+    src: url("https://plugins2.perfectcorp.com/assets/fonts/proximanova_bold.eot");
+    src: url("https://plugins2.perfectcorp.com/assets/fonts/proximanova-bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: ProximaNova-light;
+    src: url("https://plugins2.perfectcorp.com/assets/fonts/proximanova_light.eot");
+    src: url("https://plugins2.perfectcorp.com/assets/fonts/proximanova-light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: ProximaNova-medium;
+    src: url("https://plugins2.perfectcorp.com/assets/fonts/proximanova_medium.eot");
+    src: url("https://plugins2.perfectcorp.com/assets/fonts/proximanova-medium.otf") format("opentype"); 
+}
