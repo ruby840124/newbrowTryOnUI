@@ -14,31 +14,44 @@ import eyeBrowchoose from './image/eyeBrow/press.png';
 class SelectBrowPage1 extends React.Component {
   constructor(props) {
 		super(props);
-        this.state={width:0};
+		const windowWidth = (document.body.clientWidth/3.5)/3.5;
+        this.state={windowWidth:windowWidth};
     }
+	//若視窗改變觸發，重新抓取高及寬
+  componentWillMount() {
+    window.addEventListener('resize', this.resizeHandle, true);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resizeHandle);
+  }
+  
+    resizeHandle = event => {
+		const windowWidth = (document.body.clientWidth/3.5)/3.5;
+		this.setState({windowWidth});
+	}
 
     render () {
-      let width = (document.body.clientWidth/3.5)/3.5+"px";
       return(
         <div style={{display:"flex",flexWrap:"wrap"}} >
                 <button id="eyebrow1" className="eyeBrowButton" onClick={this.props.firstButton}>
-                  <div id="eyebrow1choose" style={{position:"absolute"}}><img src={eyeBrowchoose} width={width}/></div>
-                  <div><img src={eyeBrow1} width={width}/></div>
+                  <div id="eyebrow1choose" style={{position:"absolute"}}><img src={eyeBrowchoose} width={this.state.windowWidth+"px"}/></div>
+                  <div><img src={eyeBrow1} width={this.state.windowWidth+"px"}/></div>
                 </button>
                 <button id="eyebrow2" className="eyeBrowButton" onClick={this.props.otherButton}>
-                  <div><img src={eyeBrow2} width={width}/></div>
+                  <div><img src={eyeBrow2} width={this.state.windowWidth+"px"}/></div>
                 </button> 
                 <button id="eyebrow3" className="eyeBrowButton" onClick={this.props.otherButton}>
-                  <img src={eyeBrow3} width={width}/>
+                  <img src={eyeBrow3} width={this.state.windowWidth+"px"}/>
                 </button>  
                 <button id="eyebrow4" className="eyeBrowButton" onClick={this.props.otherButton}>
-                  <img src={eyeBrow4} width={width}/>
+                  <img src={eyeBrow4} width={this.state.windowWidth+"px"}/>
                 </button>  
                 <button id="eyebrow5" className="eyeBrowButton" onClick={this.props.otherButton}>
-                  <img src={eyeBrow5} width={width}/>
+                  <img src={eyeBrow5} width={this.state.windowWidth+"px"}/>
                 </button>  
                 <button id="eyebrow6" className="eyeBrowButton" onClick={this.props.otherButton}>
-                  <img src={eyeBrow6} width={width}/>
+                  <img src={eyeBrow6} width={this.state.windowWidth+"px"}/>
                 </button>  
         </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
       )
