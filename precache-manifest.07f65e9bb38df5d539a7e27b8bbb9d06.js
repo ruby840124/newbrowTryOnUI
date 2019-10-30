@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d07dbbcd9fd12b48ffea6bf0892b665",
+    "revision": "48727c8f9be650f4b65526ad5531187d",
     "url": "/newbrowTryOnUI/index.html"
   },
   {
-    "revision": "38d05eda0129c0fb8ecb",
+    "revision": "1b00ef90f296f6856931",
     "url": "/newbrowTryOnUI/static/css/2.88b23fda.chunk.css"
   },
   {
-    "revision": "50a25f18bfb971b1b7fb",
-    "url": "/newbrowTryOnUI/static/css/main.7c64763a.chunk.css"
+    "revision": "26506250f82f8c35053e",
+    "url": "/newbrowTryOnUI/static/css/main.4f278635.chunk.css"
   },
   {
-    "revision": "38d05eda0129c0fb8ecb",
-    "url": "/newbrowTryOnUI/static/js/2.12bd66a2.chunk.js"
+    "revision": "1b00ef90f296f6856931",
+    "url": "/newbrowTryOnUI/static/js/2.75e3f6a9.chunk.js"
   },
   {
-    "revision": "50a25f18bfb971b1b7fb",
-    "url": "/newbrowTryOnUI/static/js/main.72716efa.chunk.js"
+    "revision": "26506250f82f8c35053e",
+    "url": "/newbrowTryOnUI/static/js/main.9d442bff.chunk.js"
   },
   {
     "revision": "a0e8f0e69f38c9573b5d",
@@ -98,5 +98,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "99e35b40c429198deb8e25fa87d2004b",
     "url": "/newbrowTryOnUI/static/media/eyeBrowPencil.99e35b40.png"
+  },
+  {
+    "revision": "50626ced6cf41a245a01853c299ebf2c",
+    "url": "/newbrowTryOnUI/static/media/product.50626ced.PNG"
   }
 ]);
