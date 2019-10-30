@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "532ab8c4376202f1f7f2f8cd36baecdb",
+    "revision": "6d07dbbcd9fd12b48ffea6bf0892b665",
     "url": "/newbrowTryOnUI/index.html"
   },
   {
-    "revision": "4da8dc7a2d9f330517b8",
-    "url": "/newbrowTryOnUI/static/css/2.25d86f56.chunk.css"
+    "revision": "38d05eda0129c0fb8ecb",
+    "url": "/newbrowTryOnUI/static/css/2.88b23fda.chunk.css"
   },
   {
-    "revision": "fba65b5cd616d90ca419",
-    "url": "/newbrowTryOnUI/static/css/main.2d824854.chunk.css"
+    "revision": "50a25f18bfb971b1b7fb",
+    "url": "/newbrowTryOnUI/static/css/main.7c64763a.chunk.css"
   },
   {
-    "revision": "4da8dc7a2d9f330517b8",
-    "url": "/newbrowTryOnUI/static/js/2.3c028649.chunk.js"
+    "revision": "38d05eda0129c0fb8ecb",
+    "url": "/newbrowTryOnUI/static/js/2.12bd66a2.chunk.js"
   },
   {
-    "revision": "fba65b5cd616d90ca419",
-    "url": "/newbrowTryOnUI/static/js/main.32009b09.chunk.js"
+    "revision": "50a25f18bfb971b1b7fb",
+    "url": "/newbrowTryOnUI/static/js/main.72716efa.chunk.js"
   },
   {
-    "revision": "61eb62274930c117a1bc",
-    "url": "/newbrowTryOnUI/static/js/runtime-main.9b6ce39d.js"
+    "revision": "a0e8f0e69f38c9573b5d",
+    "url": "/newbrowTryOnUI/static/js/runtime-main.3498f633.js"
   },
   {
     "revision": "a2797f4e4438cfc6deea1bef5b8e750b",
@@ -98,9 +98,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "99e35b40c429198deb8e25fa87d2004b",
     "url": "/newbrowTryOnUI/static/media/eyeBrowPencil.99e35b40.png"
-  },
-  {
-    "revision": "50626ced6cf41a245a01853c299ebf2c",
-    "url": "/newbrowTryOnUI/static/media/product.50626ced.PNG"
   }
 ]);
