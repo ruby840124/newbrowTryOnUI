@@ -5,39 +5,18 @@ import BrowChoose from './BrowChoose';
 class ContentBlock extends React.Component{
     constructor(props) {
 		super(props);
-        this.state={browChooseWidth:0,imageWidth:0,height:0}
     }	
-
-    componentDidMount(){ //第一次渲染
-        const width = this.props.windowWidth/3.5+"px";
-        const imageWidth = (this.props.windowWidth- this.props.windowWidth/3.5)+"px"
-        const height = this.props.windowHeight-80+"px";
-        this.setState(({browChooseWidth:width,imageWidth:imageWidth,height:height}));
-    }
-	
-	componentDidUpdate(prevProps){ //若視窗大小改變觸發
-		if(this.props.windowWidth!=prevProps.windowWidth||this.props.windowHeight!=prevProps.windowHeight){
-			const width = this.props.windowWidth/3.5+"px";
-			const imageWidth = (this.props.windowWidth- this.props.windowWidth/3.5)+"px"
-			const height = this.props.windowHeight-80+"px";
-			this.setState(({browChooseWidth:width,imageWidth:imageWidth,height:height}));
-		}
-	 }
 	 
     render(){
-            let noCompare = null;
+            let noCompare = null; //判斷是化妝前，還是化妝後的圖片
             (this.props.modelDisplay=='inline'?noCompare='none':noCompare='inline');
         return(
-            <div style={{display:"flex"}}>
-                <div>
-                    <img className="modelImage" src={require('./image/model/before.jpg')} 
-                        style={{display:noCompare,width:this.state.imageWidth,height:this.state.height}}/>
-                    <img className="modelImage" src={require('./image/model/after.jpg')} 
-                        style={{display:this.props.modelDisplay,width:this.state.imageWidth,height:this.state.height}}/>    
+            <div style={{width:"100%",height:"92%",display:"flex"}}>
+                <div style={{width:"80%"}}>  
+                    <img  src={require('./image/model/before.jpg')} style={{display:noCompare,objectFit:"cover",width:"100%",height:"100%"}}/>
+                    <img  src={require('./image/model/after.jpg')}  style={{display:this.props.modelDisplay,objectFit:"cover",width:"100%",height:"100%"}}/> 
                 </div>
-                <div style={{width:this.state.browChooseWidth,overflow:"hidden"}}>
                     <BrowChoose/>
-                </div>
             </div>
         )
     }

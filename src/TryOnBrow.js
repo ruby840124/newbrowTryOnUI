@@ -9,7 +9,6 @@ import {TweenMax} from "gsap/TweenMax";
 class TryOnBrow extends React.Component{
     constructor(props) {
 		super(props);
-		const windowWidth = (document.body.clientWidth/3.5)/3.5;
         this.state={
             pageNow:0,
             xLocation:0,
@@ -25,23 +24,9 @@ class TryOnBrow extends React.Component{
             browColorBlock:"hidden",
             archBlock:"flex",
             lastIcon:"eyebrow1choose",
-			windowWidth:windowWidth
+            browChooseWidth:0
         }
     }	
-	
-		//若視窗改變觸發，重新抓取高及寬
-	componentWillMount() {
-		window.addEventListener('resize', this.resizeHandle, true);
-	}
-
-	componentWillUnmount() {
-		window.removeEventListener('resize', this.resizeHandle);
-	}
-  
-    resizeHandle = event => {
-		const windowWidth = (document.body.clientWidth/3.5)/3.5;
-		this.setState({windowWidth});
-	}
     
     handleRightButton=event=> {
         var div = document.getElementById('page1');
@@ -85,7 +70,7 @@ class TryOnBrow extends React.Component{
         }
         document.getElementById(this.state.lastIcon).remove();
         //動態新增
-        document.getElementById(event.currentTarget.id).innerHTML="<div id="+event.currentTarget.id+"choose "+"style=position:absolute><img src=\"https://upload.cc/i1/2019/10/09/nbCFmd.png\" width="+this.state.windowWidth+"px"+"></div>"+document.getElementById(event.currentTarget.id).innerHTML;
+        document.getElementById(event.currentTarget.id).innerHTML="<div id="+event.currentTarget.id+"choose "+"style=position:absolute><img src=\"https://upload.cc/i1/2019/10/09/nbCFmd.png\" width="+"150"+"px"+"></div>"+document.getElementById(event.currentTarget.id).innerHTML;
         const lastIcon = event.currentTarget.id+"choose";
         this.setState({shade:"none",lastIcon:lastIcon,browColorBlock:"hidden"});
     }
@@ -93,7 +78,7 @@ class TryOnBrow extends React.Component{
     handleEyebrow=event=> {
         //動態新增
         document.getElementById(this.state.lastIcon).remove();
-        document.getElementById(event.currentTarget.id).innerHTML="<div id="+event.currentTarget.id+"choose "+"style=position:absolute><img src=\"https://upload.cc/i1/2019/10/09/nbCFmd.png\"  width="+this.state.windowWidth+"px"+"></div>"+document.getElementById(event.currentTarget.id).innerHTML;
+        document.getElementById(event.currentTarget.id).innerHTML="<div id="+event.currentTarget.id+"choose "+"style=position:absolute><img src=\"https://upload.cc/i1/2019/10/09/nbCFmd.png\"  width="+"150"+"px"+"></div>"+document.getElementById(event.currentTarget.id).innerHTML;
         const lastIcon = event.currentTarget.id+"choose";
         this.setState({shade:"inline",lastIcon:lastIcon});
     }   
@@ -163,25 +148,41 @@ class TryOnBrow extends React.Component{
         });
     }
 
+    componentDidMount(){ //第一次渲染
+        const width = this.props.windowWidth/3.5+"px";
+        const imageWidth = (this.props.windowWidth- this.props.windowWidth/3.5)+"px"
+        const height = this.props.windowHeight-80+"px";
+        this.setState(({browChooseWidth:width,imageWidth:imageWidth,height:height}));
+    }
+	
+	componentDidUpdate(prevProps){ //若視窗大小改變觸發
+		if(this.props.windowWidth!=prevProps.windowWidth||this.props.windowHeight!=prevProps.windowHeight){
+			const width = this.props.windowWidth/3.5+"px";
+			const imageWidth = (this.props.windowWidth- this.props.windowWidth/3.5)+"px"
+			const height = this.props.windowHeight-80+"px";
+			this.setState(({browChooseWidth:width,imageWidth:imageWidth,height:height}));
+		}
+	 }
+
     render(){   
         return ( 
-        <div style={{display:"flex",flexDirection:"column",height:"100%"}}>
-            <div style={{display:"flex",height:"70%",justifyContent:"center",alignItems:"center"}}>
-                <button onClick={this.handleLeftButton} className="belowSelectButtonRight" style={{visibility:this.state.leftButton}}><img src={require('./image/button/arrowLeft.png')}/></button> 
+        <div style={{height:"100%",display:"flex",flexDirection:"column"}}>
+             <div style={{display:"flex",justifyContent:"center",alignItems:"center",flex:5}}>
+                <button onClick={this.handleLeftButton} className="belowSelectButtonRight" style={{visibility:this.state.leftButton}} ><img src={require('./image/button/arrowLeft.png')}/></button> 
                     <div className="rootBar">
-                        <div className="childrenBar" id="page1">
+                        <div className="childrenBar" id="page1" >
                             <SelectBrowPage1  firstButton={this.handleEyebrowExample} otherButton={this.handleEyebrow}/>
                         </div>
-                        <div className="childrenBar" id="page2">
-                            <SelectBrowPage2 otherButton={this.handleEyebrow}/>
+                        <div className="childrenBar" id="page2" >
+                            <SelectBrowPage2  firstButton={this.handleEyebrowExample} otherButton={this.handleEyebrow}/>
                         </div>
-                        <div className="childrenBar" id="page3">
-                            <SelectBrowPage3 otherButton={this.handleEyebrow}/>
+                        <div className="childrenBar" id="page2" >
+                            <SelectBrowPage2  firstButton={this.handleEyebrowExample} otherButton={this.handleEyebrow}/>
                         </div>
                     </div>
                 <button onClick={this.handleRightButton} className="belowSelectButtonLeft" style={{visibility:this.state.rightButton}}><img src={require('./image/button/arrow.png')}/></button>
             </div>
-            <div style={{height:"30%"}}>
+            <div style={{flex:1}}>
             < TryOnBrowBelow 
                 shade={this.state.shade} 
                 shadeBtn={this.state.shadeBtn} 

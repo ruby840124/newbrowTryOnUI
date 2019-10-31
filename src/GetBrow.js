@@ -4,55 +4,39 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 class GetBrow extends React.Component{
 	constructor(props) {
 		super(props);
-		this.state={isToggleOn:true}
+		const height = (document.body.scrollHeight-645)+"px";
+		this.state={height:height}
 	}	
 
     render(){
-		const secondText = {
-			display:"flex",
-			fontSize: "18px",
-			justifyContent: "center",
-			flexDirection:"column",
-			fontFamily: "ProximaNova-Bold",
-		};
-
-		const hrLine = { 
-			color: '##FFB7DD',
-			backgroundColor: '#FFB7DD',
-			height: .5,
-			borderColor : '#FFB7DD'
-        };
-        
-        let width = (document.body.clientWidth/3.5)/2.6+"px";
-        let height = (document.body.clientWidth/3.5)/2.6+"px";
 		return( 
-		<div style={{height:"100%"}}>
-			<div className="getBrowFirst" style={{height:"30%"}}>
-				<p style={{margin:0,fontSize:"1.5vw",fontFamily:"ProximaNova-light"}} >Your BROW WOW look is:</p>
-				<p style={{margin:0,fontSize:"1.5vw",fontFamily:"ProximaNova-Bold"}}>NATURAL</p><br/>
-				<p style={{margin:0,fontSize:"1vw",fontFamily:"ProximaNova-medium",textAlign:"center"}}>Get the services & products for your megical<br/>transformation in-store or online</p>
-			</div>
-			<hr style={{border:"1px solid #ececec"}}/>
-			<div className="getBrowSecond" style={{height:"30%"}}>
-				<LazyLoadImage src={require('./image/eyeBrowPencil/eyeBrowModel.png')} height={height} width={width} effect="blur"/>
-				<div style={secondText}>
-					<p style={{fontSize:"1.3vw"}}>brow wax</p>
-					<a href="https://benefitboutiques.com/" style={{fontSize:"1.5vw",color:"#f73c6e",textDecorationStyle:"dashed"}}>BOOK NOW</a>
+            <div style={{width:"100%",height:"100%",display:"flex",flexDirection:"column"}}>
+                <div className="getBrowFirst" style={{flex:1,alignItems:"center"}}>
+					<p style={{margin:0,fontSize:"28px",fontFamily:"ProximaNova-light"}} >Your BROW WOW look is:</p>
+					<p style={{margin:0,fontSize:"25px",fontFamily:"ProximaNova-Bold"}}>NATURAL</p><br/>
+					<p style={{margin:0,fontSize:"20px",fontFamily:"ProximaNova-medium"}}>Get the services & products for your megical<br/>transformation in-store or online</p>
 				</div>
-			</div>
-			<hr style={{border:"1px solid #ececec"}}/>
-			<div className="getBrowSecond" style={{height:"30%"}}>
-				<LazyLoadImage src={require('./image/eyeBrowPencil/eyeBrowPencil.png')} height={height} width={width} effect="blur"/>
-				<div style={secondText}>
-					<p style={{margin:0,fontSize:"1.3vw"}}>precisely, my brow<br/>eyebrow pencil</p>
-					<div style={{display:"flex",alignItems:"center"}}>
-						<img src={require('./image/eyeBrowPencil/color.png')} height="50px" width="55px"/>
-						<p style={{margin:0,fontFamily:"ProximaNova-medium",fontSize:"1.2vw"}} > 03 - medium </p>
+				<hr style={{margin:0,border:"1px solid #ececec"}}/>
+				<div className="getBrowSecond" style={{height:"250px",flex:1}}>
+					<img src={require('./image/eyeBrowPencil/eyeBrowModel.png')} style={{objectFit:"cover",height:"200px"}}/>
+					<div className="getBrowFirst" style={{fontFamily:"ProximaNova-Bold"}}>
+						<p style={{fontSize:"25px"}}>brow wax</p>
+						<a href="https://benefitboutiques.com/" style={{fontSize:"28px",color:"#f73c6e",textDecorationStyle:"dashed"}}>BOOK NOW</a>
 					</div>
-					<a href="https://benefitboutiques.com/" style={{fontSize:"1.5vw",color:"#f73c6e",textDecorationStyle:"dashed"}}>ADD TO BAG</a>
 				</div>
-			</div>
-		</div>	
+				<hr style={{margin:0,border:"1px solid #ececec"}}/>
+				<div className="getBrowSecond" style={{flex:1}} >
+					<img src={require('./image/eyeBrowPencil/eyeBrowPencil.png')} style={{objectFit:"cover",height:"200px"}} />
+					<div className="getBrowFirst" style={{fontFamily:"ProximaNova-Bold"}}>
+						<p style={{margin:0,fontSize:"23px"}}>precisely, my brow<br/>eyebrow pencil</p>
+						<div style={{display:"flex",alignItems:"center"}}>
+							<img src={require('./image/eyeBrowPencil/color.png')} height="30%" width="30%"/>
+							<p style={{margin:0,fontFamily:"ProximaNova-medium",fontSize:"20px"}} > 03 - medium </p>
+						</div>
+					<a href="https://benefitboutiques.com/" style={{fontSize:"25px",color:"#f73c6e",textDecorationStyle:"dashed"}}>ADD TO BAG</a>
+				</div>
+				</div>  
+            </div>    	
 		)
     }
 }

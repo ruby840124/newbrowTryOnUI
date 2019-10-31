@@ -29,24 +29,24 @@ class SelectBrowPage2 extends React.Component {
 	}
     render () {
       return(
-        <div style={{display:"flex",flexWrap:"wrap"}} >
+        <div style={{display:"flex",flexWrap:"wrap",alignItems:"center",justifyContent:"center"}} >
                 <button id="eyebrow7" className="eyeBrowButton" onClick={this.props.otherButton}>
-                  <div><img src={eyeBrow7} width={this.state.windowWidth+"px"}/></div>
+                  <div><img src={eyeBrow7} width="150px"/></div>
                 </button>
                 <button id="eyebrow8" className="eyeBrowButton" onClick={this.props.otherButton}>
-                  <div><img src={eyeBrow8} width={this.state.windowWidth+"px"}/></div>
+                  <div><img src={eyeBrow8} width="150px"/></div>
                 </button> 
                 <button id="eyebrow9" className="eyeBrowButton" onClick={this.props.otherButton}>
-                  <img src={eyeBrow9} width={this.state.windowWidth+"px"}/>
+                  <img src={eyeBrow9} width="150px"/>
                 </button>  
                 <button id="eyebrow10" className="eyeBrowButton" onClick={this.props.otherButton}>
-                  <img src={eyeBrow10} width={this.state.windowWidth+"px"}/>
+                  <img src={eyeBrow10} width="150px"/>
                 </button>  
                 <button id="eyebrow11" className="eyeBrowButton" onClick={this.props.otherButton}>
-                  <img src={eyeBrow11} width={this.state.windowWidth+"px"}/>
+                  <img src={eyeBrow11} width="150px"/>
                 </button>  
                 <button id="eyebrow12" className="eyeBrowButton" onClick={this.props.otherButton}>
-                  <img src={eyeBrow12} width={this.state.windowWidth+"px"}/>
+                  <img src={eyeBrow12} width="150px"/>
                 </button>  
         </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
       )
