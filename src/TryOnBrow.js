@@ -176,8 +176,8 @@ class TryOnBrow extends React.Component{
                         <div className="childrenBar" id="page2" >
                             <SelectBrowPage2  firstButton={this.handleEyebrowExample} otherButton={this.handleEyebrow}/>
                         </div>
-                        <div className="childrenBar" id="page2" >
-                            <SelectBrowPage2  firstButton={this.handleEyebrowExample} otherButton={this.handleEyebrow}/>
+                        <div className="childrenBar" id="page3" >
+                            <SelectBrowPage3  firstButton={this.handleEyebrowExample} otherButton={this.handleEyebrow}/>
                         </div>
                     </div>
                 <button onClick={this.handleRightButton} className="belowSelectButtonLeft" style={{visibility:this.state.rightButton}}><img src={require('./image/button/arrow.png')}/></button>
